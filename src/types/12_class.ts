@@ -18,7 +18,7 @@ class Person {
     }
 
     public setFullName(newName: string): void {
-        this.ssn = newName; //error
+        // this.ssn = newName; //error
     }
 }
 

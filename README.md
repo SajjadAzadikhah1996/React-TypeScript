@@ -3,3 +3,5 @@
 [TypeScript Functions](https://www.typescripttutorial.net/typescript-tutorial/typescript-functions/)
 
 [TypeScript Classes](https://www.typescripttutorial.net/typescript-tutorial/typescript-class/)
+
+[TypeScript Interfaces](https://www.typescripttutorial.net/typescript-tutorial/typescript-interface/)
