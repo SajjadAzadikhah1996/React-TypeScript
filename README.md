@@ -7,3 +7,5 @@
 [TypeScript Interfaces](https://www.typescripttutorial.net/typescript-tutorial/typescript-interface/)
 
 [TypeScript Guards](https://www.typescripttutorial.net/typescript-tutorial/typescript-type-guards/)
+
+[TypeScript Casting](https://www.typescripttutorial.net/typescript-tutorial/type-casting/)
