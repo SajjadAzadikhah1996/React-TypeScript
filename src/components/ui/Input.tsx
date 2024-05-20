@@ -1,8 +1,4 @@
-import React from 'react';
-
-export type InputProps = {
-    handleChange: (eve: React.ChangeEvent<HTMLInputElement>) => void
-}
+import { InputProps } from '@/types/props';
 
 export default function Input(props: InputProps) {
     return (
