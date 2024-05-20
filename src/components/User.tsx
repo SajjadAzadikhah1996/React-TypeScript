@@ -1,3 +1,7 @@
+'use client';
+import Button from '@/components/ui/Button';
+import Input from '@/components/ui/Input';
+
 export type GreetProps = {
     name: string,
     isLoggedIn: boolean,
@@ -10,8 +14,14 @@ export default function User(props: GreetProps) {
         <div>
             {
                 props.isLoggedIn ?
-                    <h1>{ props.name }, { messages } messages</h1> :
-                    <h1>Hello Guest</h1>
+                    <div>{ props.name }, { messages } messages
+                        <Button
+                            handleClick = { (eve) => console.log(eve) }
+                        >
+                            Mark as read
+                        </Button>
+                    </div> :
+                    <h1>Hello Guest <Input handleChange = { (eve) => console.log(eve.target.value) }/></h1>
             }
         </div>
     );
