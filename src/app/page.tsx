@@ -1,15 +1,11 @@
-import Users from '@/components/Users';
-
-const users = [
-    { name: 'Name1', isLoggedIn: true, messages: 12 },
-    { name: 'Name2', isLoggedIn: false, messages: 8 },
-    { name: 'Name3', isLoggedIn: true}
-];
+import Greet from '@/components/Greet';
+import CustomGreet from '@/components/CustomGreet';
 
 export default function Home() {
     return (
         <main>
-            <Users statusText = 'fulfilled' users = { users }/>
+            <Greet name = 'JohnDoe' isLoggedIn = { true }/>
+            <CustomGreet name = 'JaneDoe' isLoggedIn = { true }/>
         </main>
     );
 }
