@@ -1,11 +1,18 @@
-import Toast from '@/components/Toast';
+import Button from '@/components/Button';
+import Input from '@/components/Input';
 
 export default function Home() {
     return (
         <main>
-            <Toast position = 'left-bottom'/>
-            <Toast position = 'center'/>
-            <Toast position = 'right-top'/>
+            <Button variant = 'primary'>
+                primary
+            </Button>
+            <Button variant = 'secondary'>
+                secondary
+            </Button>
+            <Input>
+                search for...
+            </Input>
         </main>
     );
 }
