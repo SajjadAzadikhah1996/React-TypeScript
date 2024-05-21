@@ -1,11 +1,12 @@
-import Greet from '@/components/Greet';
-import CustomGreet from '@/components/CustomGreet';
+import Typography from '@/components/Typography';
 
 export default function Home() {
     return (
         <main>
-            <Greet name = 'JohnDoe' isLoggedIn = { true }/>
-            <CustomGreet name = 'JaneDoe' isLoggedIn = { true }/>
+            <Typography>span tag</Typography><br/>
+            <Typography as = 'label' htmlFor = 'username'>label tag</Typography>
+            <Typography as = 'h1'>h1 tag</Typography>
+            <Typography as = 'a' >a tag</Typography>
         </main>
     );
 }
