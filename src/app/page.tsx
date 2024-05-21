@@ -1,13 +1,11 @@
-'use client';
-
-import List from '@/components/List';
+import RandomNumber from '@/components/RandomNumber';
 
 export default function Home() {
     return (
         <main>
-            <List items = { [ 1, 2, 3 ] } onClick = { (value) => console.log(value) }/>
-            <List items = { [ 'one', 'tow', 'three' ] } onClick = { (value) => console.log(value) }/>
-            <List items = { [ { name: 'JohnDoe' } ] } onClick = { (value) => console.log(value) }/>
+            <RandomNumber number = { 0 } isZero/>
+            <RandomNumber number = { 10 } isPositive/>
+            <RandomNumber number = { -10 } isNegative/>
         </main>
     );
 }
