@@ -1,11 +1,13 @@
-import Dashboard from '@/components/Dashboard';
-import Profile from '@/components/Profile';
+'use client';
 
+import List from '@/components/List';
 
 export default function Home() {
     return (
         <main>
-            <Dashboard isLoggedIn = { true } component = { Profile }/>
+            <List items = { [ 1, 2, 3 ] } onClick = { (value) => console.log(value) }/>
+            <List items = { [ 'one', 'tow', 'three' ] } onClick = { (value) => console.log(value) }/>
+            <List items = { [ { name: 'JohnDoe' } ] } onClick = { (value) => console.log(value) }/>
         </main>
     );
 }
