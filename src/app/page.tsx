@@ -1,11 +1,11 @@
-import User from '@/components/User';
-import Counter from '@/components/Counter';
+import Dashboard from '@/components/Dashboard';
+import Profile from '@/components/Profile';
+
 
 export default function Home() {
     return (
         <main>
-            <User/>
-            <Counter/>
+            <Dashboard isLoggedIn = { true } component = { Profile }/>
         </main>
     );
 }
